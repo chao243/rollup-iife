@@ -1,0 +1,19 @@
+{
+  "name": "rollup-iife",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.21.2"
+  },
+  "dependencies": {
+    "mqtt": "^5.10.1"
+  }
+}
