@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       mqtt:
-        specifier: ^5.10.1
-        version: 5.10.1
+        specifier: github:chao243/MQTT.js
+        version: https://codeload.github.com/chao243/MQTT.js/tar.gz/9cf91bf67747408fb5a97fa0e91446b68661b2d1
     devDependencies:
       '@rollup/plugin-node-resolve':
         specifier: ^15.2.3
@@ -36,8 +36,8 @@ packages:
     resolution: {integrity: sha512-EStJpq4OuY8xYfhGVXngigBJRWxftKX9ksiGDnmlY3o7B/V7KIAc9X4oiK87uPJSc/vs5L869bem5fhZa8caZw==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/runtime@7.25.6':
-    resolution: {integrity: sha512-VBj9MYyDb9tuLq7yzqjgzt6Q+IBQLrGZfdjOekyEirZPHxXWoTSGUTMrpsfi58Up73d13NfYLv8HT9vmznjzhQ==}
+  '@babel/runtime@7.25.7':
+    resolution: {integrity: sha512-FjoyLe754PMiYsFaN5C94ttGiOmBNYTf6pLr4xXHAT5uctHb092PBszndLDR5XA/jghQvn4n7JMHl7dmTgbm9w==}
     engines: {node: '>=6.9.0'}
 
   '@jridgewell/sourcemap-codec@1.5.0':
@@ -144,8 +144,8 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
-  '@types/node@22.5.4':
-    resolution: {integrity: sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==}
+  '@types/node@22.7.5':
+    resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
 
   '@types/readable-stream@4.0.15':
     resolution: {integrity: sha512-oAZ3kw+kJFkEqyh7xORZOku1YAKvsFTogRY8kVl4vHpEKiDkfnSA/My8haRE7fvmix5Zyy+1pwzOi7yycGLBJw==}
@@ -167,8 +167,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  bl@6.0.15:
-    resolution: {integrity: sha512-RGhjD1XCPS7ZdAH6cEJVaR3gLV4KJP2hvkQ49AH5kwScjiyd0jBM8RsP4oHKzcx+kNCON9752zPeRnuv0HHwzw==}
+  bl@6.0.16:
+    resolution: {integrity: sha512-V/kz+z2Mx5/6qDfRCilmrukUXcXuCoXKg3/3hDvzKKoSUx8CJKudfIoT29XZc3UE9xBvxs5qictiHdprwtteEg==}
 
   buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
@@ -283,8 +283,9 @@ packages:
   mqtt-packet@9.0.0:
     resolution: {integrity: sha512-8v+HkX+fwbodsWAZIZTI074XIoxVBOmPeggQuDFCGg1SqNcC+uoRMWu7J6QlJPqIUIJXmjNYYHxBBLr1Y/Df4w==}
 
-  mqtt@5.10.1:
-    resolution: {integrity: sha512-hXCOki8sANoQ7w+2OzJzg6qMBxTtrH9RlnVNV8panLZgnl+Gh0J/t4k6r8Az8+C7y3KAcyXtn0mmLixyUom8Sw==}
+  mqtt@https://codeload.github.com/chao243/MQTT.js/tar.gz/9cf91bf67747408fb5a97fa0e91446b68661b2d1:
+    resolution: {tarball: https://codeload.github.com/chao243/MQTT.js/tar.gz/9cf91bf67747408fb5a97fa0e91446b68661b2d1}
+    version: 5.10.1
     engines: {node: '>=16.0.0'}
     hasBin: true
 
@@ -422,7 +423,7 @@ snapshots:
       picocolors: 1.1.0
     optional: true
 
-  '@babel/runtime@7.25.6':
+  '@babel/runtime@7.25.7':
     dependencies:
       regenerator-runtime: 0.14.1
 
@@ -497,20 +498,20 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
-  '@types/node@22.5.4':
+  '@types/node@22.7.5':
     dependencies:
       undici-types: 6.19.8
 
   '@types/readable-stream@4.0.15':
     dependencies:
-      '@types/node': 22.5.4
+      '@types/node': 22.7.5
       safe-buffer: 5.1.2
 
   '@types/resolve@1.20.2': {}
 
   '@types/ws@8.5.12':
     dependencies:
-      '@types/node': 22.5.4
+      '@types/node': 22.7.5
 
   abort-controller@3.0.0:
     dependencies:
@@ -523,7 +524,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  bl@6.0.15:
+  bl@6.0.16:
     dependencies:
       '@types/readable-stream': 4.0.15
       buffer: 6.0.3
@@ -580,7 +581,7 @@ snapshots:
 
   fast-unique-numbers@8.0.13:
     dependencies:
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.25.7
       tslib: 2.7.0
 
   fsevents@2.3.3:
@@ -626,13 +627,13 @@ snapshots:
 
   mqtt-packet@9.0.0:
     dependencies:
-      bl: 6.0.15
+      bl: 6.0.16
       debug: 4.3.7
       process-nextick-args: 2.0.1
     transitivePeerDependencies:
       - supports-color
 
-  mqtt@5.10.1:
+  mqtt@https://codeload.github.com/chao243/MQTT.js/tar.gz/9cf91bf67747408fb5a97fa0e91446b68661b2d1:
     dependencies:
       '@types/readable-stream': 4.0.15
       '@types/ws': 8.5.12
@@ -760,19 +761,19 @@ snapshots:
 
   worker-timers-broker@6.1.8:
     dependencies:
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.25.7
       fast-unique-numbers: 8.0.13
       tslib: 2.7.0
       worker-timers-worker: 7.0.71
 
   worker-timers-worker@7.0.71:
     dependencies:
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.25.7
       tslib: 2.7.0
 
   worker-timers@7.1.8:
     dependencies:
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.25.7
       tslib: 2.7.0
       worker-timers-broker: 6.1.8
       worker-timers-worker: 7.0.71
