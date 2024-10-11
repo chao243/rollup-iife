@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       mqtt:
-        specifier: github:chao243/MQTT.js
-        version: https://codeload.github.com/chao243/MQTT.js/tar.gz/9cf91bf67747408fb5a97fa0e91446b68661b2d1
+        specifier: github:chao243/mqtt-v5.7.3-tts#v5.7.3
+        version: git+https://git@github.com:chao243/mqtt-v5.7.3-tts.git#3c09010976eefb4e5f5b3c0701fa8560b2777f17
     devDependencies:
       '@rollup/plugin-node-resolve':
         specifier: ^15.2.3
@@ -283,9 +283,14 @@ packages:
   mqtt-packet@9.0.0:
     resolution: {integrity: sha512-8v+HkX+fwbodsWAZIZTI074XIoxVBOmPeggQuDFCGg1SqNcC+uoRMWu7J6QlJPqIUIJXmjNYYHxBBLr1Y/Df4w==}
 
-  mqtt@https://codeload.github.com/chao243/MQTT.js/tar.gz/9cf91bf67747408fb5a97fa0e91446b68661b2d1:
-    resolution: {tarball: https://codeload.github.com/chao243/MQTT.js/tar.gz/9cf91bf67747408fb5a97fa0e91446b68661b2d1}
-    version: 5.10.1
+  mqtt@5.7.3:
+    resolution: {integrity: sha512-v+5la6Q6zjl0AWsI7ICDA/K3hclkNj7CMa0khMugCC+LKPLrQF+sSQb/9ckezZLMvcBC1tXhRzqmcagQoDl9fQ==}
+    engines: {node: '>=16.0.0'}
+    hasBin: true
+
+  mqtt@git+https://git@github.com:chao243/mqtt-v5.7.3-tts.git#3c09010976eefb4e5f5b3c0701fa8560b2777f17:
+    resolution: {commit: 3c09010976eefb4e5f5b3c0701fa8560b2777f17, repo: git@github.com:chao243/mqtt-v5.7.3-tts.git, type: git}
+    version: 5.7.3
     engines: {node: '>=16.0.0'}
     hasBin: true
 
@@ -633,7 +638,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  mqtt@https://codeload.github.com/chao243/MQTT.js/tar.gz/9cf91bf67747408fb5a97fa0e91446b68661b2d1:
+  mqtt@5.7.3:
     dependencies:
       '@types/readable-stream': 4.0.15
       '@types/ws': 8.5.12
@@ -643,6 +648,30 @@ snapshots:
       help-me: 5.0.0
       lru-cache: 10.4.3
       minimist: 1.2.8
+      mqtt-packet: 9.0.0
+      number-allocator: 1.0.14
+      readable-stream: 4.5.2
+      reinterval: 1.1.0
+      rfdc: 1.4.1
+      split2: 4.2.0
+      worker-timers: 7.1.8
+      ws: 8.18.0
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+
+  mqtt@git+https://git@github.com:chao243/mqtt-v5.7.3-tts.git#3c09010976eefb4e5f5b3c0701fa8560b2777f17:
+    dependencies:
+      '@types/readable-stream': 4.0.15
+      '@types/ws': 8.5.12
+      commist: 3.2.0
+      concat-stream: 2.0.0
+      debug: 4.3.7
+      help-me: 5.0.0
+      lru-cache: 10.4.3
+      minimist: 1.2.8
+      mqtt: 5.7.3
       mqtt-packet: 9.0.0
       number-allocator: 1.0.14
       readable-stream: 4.5.2
